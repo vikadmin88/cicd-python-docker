@@ -35,12 +35,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - uses: pavelzw/pytest-action@v2
-        with:
-          emoji: false
-          verbose: false
-          job-summary: true
-
       - name: Test with pytest
         run: |
           pip install pytest pytest-cov
