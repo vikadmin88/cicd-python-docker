@@ -1,8 +1,5 @@
 name: Python CI
 
-env:
-  PY_VERSION: 3.12
-
 on:
   workflow_dispatch:
 
@@ -27,7 +24,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: $PY_VERSION
+          python-version: "3.12"
 
       - name: Python version installed
         run: |
