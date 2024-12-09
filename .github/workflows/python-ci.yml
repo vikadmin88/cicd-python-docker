@@ -29,6 +29,9 @@ jobs:
       - name: Python version installed
         run: |
           python --version
+      - name: Python pytest install
+        run: |
+          sudo apt install python3-pytest
 
       - name: Install dependencies
         run: |
